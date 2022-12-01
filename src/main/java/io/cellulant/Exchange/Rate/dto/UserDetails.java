@@ -15,9 +15,9 @@ public class UserDetails {
     @Id
     @GeneratedValue
     int userId;
-    @Column(name = "firstName")
+    @Column(name = "first_name")
     String firstName;
-    @Column(name = "lastName")
+    @Column(name = "last_name")
     String lastName;
     @Column(name = "email")
     String email;
