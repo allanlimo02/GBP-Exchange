@@ -1,4 +1,4 @@
-package io.cellulant.Exchange.Rate.repositories;
+package io.cellulant.Exchange.Rate.interfaces;
 
 import io.cellulant.Exchange.Rate.dto.UserDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
