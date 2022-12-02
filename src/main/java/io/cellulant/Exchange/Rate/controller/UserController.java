@@ -49,5 +49,26 @@ public class UserController {
         return userService.getUsers();
 
     }
+    @DeleteMapping("cellulant/deleteuser")
+    public UserDetails deleteUserbyId(UserDetails userDetails){
+        try {
+            userService.deleteuser(userDetails);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return userDetails;
+    }
+    @DeleteMapping("/cellulant/deletebyid/{id}")
+    public int deletebyid(int id){
+        try {
+            userService.deleteUserById(id);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return 10;
+    }
+
 
 }

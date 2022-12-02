@@ -41,4 +41,20 @@ public class UserService {
         }
         return user_repository.findAll();
     }
+    // Delete User by Id
+    public UserDetails deleteuser(UserDetails userDetails){
+        try{
+            user_repository.delete(userDetails);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return userDetails;
+    }
+    //delete user by id
+    public void deleteUserById(int id)throws NullPointerException{
+        try {
+            user_repository.deleteById(id);
+        } catch (Exception e){
+
+    }}
 }
