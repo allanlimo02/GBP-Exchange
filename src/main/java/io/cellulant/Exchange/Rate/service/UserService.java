@@ -50,4 +50,11 @@ public class UserService {
         }
         return userDetails;
     }
+    //delete user by id
+    public void deleteUserById(int id)throws NullPointerException{
+        try {
+            user_repository.deleteById(id);
+        } catch (Exception e){
+
+    }}
 }
