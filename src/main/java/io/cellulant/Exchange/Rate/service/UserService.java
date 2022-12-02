@@ -41,4 +41,13 @@ public class UserService {
         }
         return user_repository.findAll();
     }
+    // Delete User by Id
+    public UserDetails deleteuser(UserDetails userDetails){
+        try{
+            user_repository.delete(userDetails);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return userDetails;
+    }
 }
