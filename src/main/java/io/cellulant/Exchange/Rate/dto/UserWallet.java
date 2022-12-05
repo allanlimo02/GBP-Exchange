@@ -17,6 +17,8 @@ public class UserWallet {
     private int walletId;
     @Column(name = "user_id")
     private int userId;
+    @Column(name = "wallet_amount")
+    private int walletAmmount;
 
 
 }
