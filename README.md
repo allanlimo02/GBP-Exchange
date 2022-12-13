@@ -1,4 +1,4 @@
-## GBP  vs UDS Currency Converter. 
+## GBP  vs USD Currency Converter. 
 ### By Allan Limo
 
  This is a currency converter app build with springboot for  **Cellulant** graduate trainee assessment 
